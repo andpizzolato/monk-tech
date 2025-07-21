@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>monk.tech</title>
+  <title>Monk Tech</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <style>
     body {
       margin: 0;
@@ -14,49 +13,80 @@
       font-family: Helvetica, Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
     img {
       max-width: 350px;
       height: auto;
     }
-    p {
+
+    h1 {
       font-weight: bold;
-      font-size: 2.5rem;
-      margin-top: 2.5rem;
-      margin-bottom: -1.5rem;
+      font-size: 2.2rem;
+      margin-top: 2rem;
     }
+
     .description {
       font-size: 1rem;
       font-weight: normal;
       margin-top: 1rem;
-      max-width: 500px;
+      max-width: 600px;
       line-height: 1.6;
-      padding: 0 1rem;
     }
-    .name {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-    }
+
     footer {
-      margin-top: auto;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #cccccc;
+      padding: 40px 0;
+      line-height: 1.8;
+    }
+
+    .legal-links {
+      font-size: 10px;
+      margin-top: 1rem;
+    }
+
+    .legal-links a {
+      color: #cccccc;
+      text-decoration: none;
+      margin: 0 5px;
     }
   </style>
 </head>
 <body>
-  <img src="assets/logo.svg" alt="monk.tech Logo" />
-  <p>MONK TECH <br /></p>
-  <div class="name">di Andrea Pizzolato</div>
-  <div class="description">
-    Consulenza IT per aziende e privati: supporto tecnico, infrastrutture, integrazioni e gestione delle risorse informatiche.
-  </div>
 
-  <footer style="font-family: Helvetica, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 12px; color: #cccccc; padding: 40px 0; text-align: center; line-height: 1.8;">
-  MONK TECH di Andrea Pizzolato - Consulenza IT per aziende e privati <br /> P.IVA IT04595710247 - <a href="mailto:andrea@monk.tech" style="color: #cccccc;">andrea@monk.tech</a> - Tutti i diritti riservati © 2025
-</footer>
+  <main>
+    <img src="assets/logo.svg" alt="monk.tech Logo" />
+    <h1>MONK TECH di Andrea Pizzolato</h1>
+    <div class="description">
+      Offriamo consulenza IT per aziende: supporto tecnico continuativo, gestione delle infrastrutture informatiche, integrazione di sistemi e ottimizzazione del parco dispositivi. Affianchiamo imprese nella trasformazione digitale con soluzioni su misura.
+    </div>
+  </main>
+
+  <footer>
+    MONK TECH di Andrea Pizzolato<br />
+    P.IVA IT04595710247 · andrea@monk.tech<br />
+    20159 Milano (MI)<br />
+
+    <div class="legal-links">
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="termini.html">Termini & Condizioni</a>
+    </div>
+  </footer>
+
 </body>
 </html>
